@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 @Table(name = "books")
 public class Book {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     private String book_name;
